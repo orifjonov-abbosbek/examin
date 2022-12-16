@@ -368,7 +368,7 @@
                         <h2 class="sobity_title">Будь в курсе событий</h2>
                         <form class="sobity_forum" action="https://echo.htmlacademy.ru/" method="post">
                             <input class="sobity_input" type="email" name="email" placeholder="Укажите Ваш email адрес"
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="3">
                             <button class="sobity_btn" type="submit">Подписаться</button>
                         </form>
                     </div>
@@ -457,9 +457,9 @@
                     </div>
                     <form class="callback_form" action="https://echo.htmlacademy.ru/" method="post">
                         <input class="callback_input" type="text" name="name" id="name" placeholder="Ваше имя "
-                            required>
+                            minlength="5">
                         <input class="callback_input" type="email" name="email" placeholder="Email для обратной связи"
-                            required>
+                            minlength="10">
                         <textarea class="textarea" name="comment" id="textarea" cols="30" rows="10"
                             placeholder="Опишите Ваш вопрос."></textarea>
                         <button class="callback_btn" type="submit">Задать нам вопрос</button>
