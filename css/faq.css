@@ -1,0 +1,121 @@
+
+.faq_all {
+  padding-top: 118px;
+  padding-bottom: 270px;
+}
+
+.faq_alla_top_article {
+  margin-left: 157px;
+}
+.faq_all_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+  margin-bottom: 27px;
+  margin-top: 0;
+}
+.faq_all_desc {
+  width: 447px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+  margin-bottom: 35px;
+}
+.faq_all_btn {
+  width: 201px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: #78c0de;
+  border-radius: 3px;
+  color: #fff;
+  padding-left: 39px;
+  border: none;
+  gap: 4px;
+  margin-bottom: 63px;
+}
+.faq_card {
+  width: 752px;
+  margin-left: 157px;
+  background-color: #fff;
+  padding-top: 23px;
+  padding-right: 41px;
+  padding-bottom: 32px;
+  padding-left: 63px;
+  margin-bottom: 18px;
+  border-radius: 5px;
+}
+.faq_card_top_article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 28px;
+}
+.faq_card_time {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #333333;
+}
+.faq_card_desc {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #78c0de;
+}
+.faq_card_details summary {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+}
+.summary_arrow {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: -200px;
+}
+details[open] summary ~ * {
+  animation: open 0.8s ease-in-out;
+}
+details[open] .summary_arrow {
+  transform: rotate(180deg);
+}
+summary {
+  width: 539px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+  background-color: #fff;
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+}
+summary::marker {
+  display: none;
+}
+
+.faq_details_article {
+  width: 577px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+  padding-bottom: 75px;
+}
+.waiting {
+  opacity: 0.5;
+}
