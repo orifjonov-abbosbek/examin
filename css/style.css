@@ -206,7 +206,7 @@ body {
 
   background-image: url(../images/hero_bg_1.png), url(../images/hero_bg_2.png);
   background-repeat: no-repeat;
-  background-position: calc(50% - 470px) calc(50% - 10px),
+  background-position: calc(50% - 520px) calc(50% - 100px),
     calc(50% + 720px) calc(50% + 180px);
 }
 .hero_wrappper {

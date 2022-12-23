@@ -1,16 +1,16 @@
 
-var elNavItems = document.querySelectorAll(".sitenav__item");
-var elNavLinks = document.querySelectorAll(".sitenav__link");
+// var elNavItems = document.querySelectorAll(".sitenav__item");
+// var elNavLinks = document.querySelectorAll(".sitenav__link");
 
-elNavLinks.forEach((link) => {
-    link.addEventListener("click", function(){
-        elNavItems.forEach(function(item){
-            item.classList.remove("sitenav__item--active");
-        })
+// elNavLinks.forEach((link) => {
+//     link.addEventListener("click", function(){
+//         elNavItems.forEach(function(item){
+//             item.classList.remove("sitenav__item--active");
+//         })
 
-        link.parentElement.classList.add("sitenav__item--active");
-    })
-})
+//         link.parentElement.classList.add("sitenav__item--active");
+//     })
+// })
 
 
 var elBtn = document.querySelector(".end-wrapper__request-link");

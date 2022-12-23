@@ -74,7 +74,7 @@
 
                     <nav class="sitenav">
                         <ul class="sitenav__list">
-                            <li class="sitenav__item sitenav__item--active">
+                            <li class="sitenav__item">
                                 <a class="sitenav__link" href="index.html">Главная</a>
                             </li>
                             <li class="sitenav__item">
@@ -89,7 +89,7 @@
                             <li class="sitenav__item">
                                 <a class="sitenav__link" href="faq.html">FAQ</a>
                             </li>
-                            <li class="sitenav__item">
+                            <li class="sitenav__item sitenav__item--active">
                                 <a class="sitenav__link" href="contact.html">Контакты</a>
                             </li>
                         </ul>
@@ -98,6 +98,64 @@
                     <a class="end-wrapper__request-link" href="#">
                         Задать вопрос
                     </a>
+
+
+
+                    <div class="modal">
+                        <div class="modal-window">
+                          <button class="modal-close" type="button">
+                            <img
+                              src="./images/close-icon.svg"
+                              width="18"
+                              height="18"
+                              alt="Close btn"
+                            />
+                          </button>
+          
+                          <div class="modal-end">
+                            <h2 class="modal-title">Остались вопросы?</h2>
+          
+                            <form
+                              class="modal-form"
+                              action="https://echo.htmlacademy.ru/courses"
+                              method="POST"
+                            >
+                              <label>
+                                <input
+                                  class="modal-input__name"
+                                  type="text"
+                                  name="user_name"
+                                  placeholder="Ваше имя"
+                                  aria-label="Ваше имя"
+                                  required
+                                />
+                              </label>
+          
+                              <label>
+                                <input
+                                  class="modal-input__email"
+                                  type="email"
+                                  name="email"
+                                  placeholder="Email для обратной связи"
+                                  aria-label="Email для обратной связи"
+                                  required
+                                />
+                              </label>
+          
+                              <textarea
+                                class="modal-input__comment"
+                                name="comment"
+                                placeholder="Например: в каком возрасте можно прививать от бешенства?"
+                                required
+                              ></textarea>
+          
+                              <button class="modal-submit" type="submit">
+                                Задать вопрос
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -206,7 +264,7 @@
                 <ul class="footer_list">
                     <li class="footer_list_item"><a class="footer_list_item_link" href="">Полезные Статьи</a></li>
                     <li class="footer_list_item"><a class="footer_list_item_link" href="">FAQ</a></li>
-                    <li class="footer_list_item"><a class="footer_list_item_link" href="">Контакты</a></li>
+                    <li class="footer_list_item sitenav__item--active"><a class="footer_list_item_link" href="">Контакты</a></li>
                 </ul>
                 <ul class="footer_calendar_list">
                     <li class="footer_calendar">
