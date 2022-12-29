@@ -89,12 +89,10 @@
 
 /**************** how to find section  */
 
-
-.how_to_find{
-    background-image: url(../images/how_to_find_koppak.png);
-    background-repeat: no-repeat;
-    background-position: calc(50% - 400px) calc(50% - 166px);
-   
+.how_to_find {
+  background-image: url(../images/how_to_find_koppak.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 400px) calc(50% - 166px);
 }
 .how_to_find_wrapper {
   display: flex;
@@ -124,6 +122,8 @@
 }
 .how_to_find_bottom {
   display: flex;
+  position: relative;
+  z-index: -1;
 }
 
 .iframe_box {
@@ -136,8 +136,8 @@
   height: 466px;
 }
 
-.empty{
-    width: 100%;
-    height: 206px;
-    background-color: #fff;
+.empty {
+  width: 100%;
+  height: 206px;
+  background-color: #fff;
 }

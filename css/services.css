@@ -82,7 +82,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -188,9 +188,9 @@ select {
 * Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -198,9 +198,9 @@ button,
 * Remove the inner border and padding in Firefox.
 */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -209,9 +209,9 @@ button::-moz-focus-inner,
 * Restore the focus styles unset by the previous rule.
 */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -261,8 +261,8 @@ textarea {
 * 1. Add the correct box sizing in IE 10.
 * 2. Remove the padding in IE 10.
 */
-[type=checkbox],
-[type=radio] {
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -272,8 +272,8 @@ textarea {
 /**
 * Correct the cursor style of increment and decrement buttons in Chrome.
 */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -281,7 +281,7 @@ textarea {
 * 1. Correct the odd appearance in Chrome and Safari.
 * 2. Correct the outline style in Safari.
 */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -291,7 +291,7 @@ textarea {
 /**
 * Remove the inner padding in Chrome and Safari on macOS.
 */
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -341,21 +341,24 @@ template {
 /* FONTS */
 @font-face {
   font-family: "Futura PT";
-  src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"), url("../fonts/FuturaPT-Bold.woff") format("woff");
+  src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"),
+    url("../fonts/FuturaPT-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Futura PT";
-  src: url("../fonts/FuturaPT-Light.woff2") format("woff2"), url("../fonts/FuturaPT-Light.woff") format("woff");
+  src: url("../fonts/FuturaPT-Light.woff2") format("woff2"),
+    url("../fonts/FuturaPT-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Futura PT";
-  src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"), url("../fonts/FuturaPT-Medium.woff") format("woff");
+  src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"),
+    url("../fonts/FuturaPT-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -382,7 +385,7 @@ body {
   overflow-x: hidden;
   font-family: "Futura PT", "Arial", sans-serif;
   font-weight: 400;
-  background-color: #F9F8F8;
+  background-color: #f9f8f8;
   background-image: url("../images/body-bg.png");
   background-size: 100%;
 }
@@ -424,7 +427,7 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #fff;
-  border: 1px solid #F3F3F3;
+  border: 1px solid #f3f3f3;
 }
 
 .start-wrapper {
@@ -472,13 +475,13 @@ img {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #FFBD54;
+  background-color: #ffbd54;
 }
 .start-wrapper__item:nth-child(3)::before {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #FFBD54;
+  background-color: #ffbd54;
 }
 .start-wrapper__link {
   font-weight: 500;
@@ -562,7 +565,7 @@ img {
   color: #333;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1350px) {
   .end-wrapper {
     flex-direction: column;
   }
@@ -644,7 +647,7 @@ img {
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
 }
 .our-services__item:nth-child(even) .our-services__item-btn {
-  background-color: #78C0DE;
+  background-color: #78c0de;
 }
 .our-services__item:nth-child(even) .our-services__item-btn:hover {
   background-color: #000;
@@ -674,11 +677,21 @@ img {
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
-  background-color: #FFBD54;
+  background-color: #ffbd54;
   color: #fff;
 }
 .our-services__item-btn:hover {
   background-color: #000;
+}
+@media only screen and (max-width: 1068px) {
+  .our-services {
+    background-image: none;
+  }
+  .our-services__text-box {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (max-width: 660px) {
@@ -698,6 +711,18 @@ img {
   }
   .our-services__item-title {
     font-size: 25px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .our-services__text-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .our-services__item {
+    width: 100%;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -808,7 +833,7 @@ ul {
   text-align: right;
   font-size: 14px;
   line-height: 18px;
-  color: #5C5C5C;
+  color: #5c5c5c;
 }
 
 @media only screen and (max-width: 976px) {
@@ -854,4 +879,4 @@ ul {
     margin-bottom: 15px;
   }
 }
-/**************** FOOTER STYLES END *********************//*# sourceMappingURL=main.css.map */
+/**************** FOOTER STYLES END *********************/ /*# sourceMappingURL=main.css.map */

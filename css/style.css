@@ -42,7 +42,6 @@ body {
   font-weight: 500;
   overflow-x: hidden;
   background-image: url(../images/body.png);
-
 }
 
 .container {
@@ -197,13 +196,59 @@ body {
   color: #333;
 }
 
+
+
+
 /********************** HEADDER SECTION END **************/
+
+
+@media only screen and (max-width: 1350px) {
+  .end-wrapper {
+    flex-direction: column;
+  }
+  .end-wrapper__request-link {
+    margin-top: 20px;
+  }
+  .end-wrapper__logo {
+    position: static;
+  }
+}
+@media only screen and (max-width: 1068px) {
+  .start-wrapper {
+    flex-direction: column;
+  }
+  .start-wrapper__list {
+    margin: 15px 0;
+  }
+
+}
+@media only screen and (max-width: 790px) {
+  .sitenav__list {
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .sitenav__item--active{
+    margin-left: -35px;
+  }
+}
+@media only screen and (max-width: 487px) {
+  .start-wrapper__list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .start-wrapper__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .sitenav__item--active{
+    margin-left: -35px;
+  }
+}
 /********************** MAIN SECTION START **************/
 
 /*********************** HERO SECTION  **********************/
 
 .hero {
-
   background-image: url(../images/hero_bg_1.png), url(../images/hero_bg_2.png);
   background-repeat: no-repeat;
   background-position: calc(50% - 520px) calc(50% - 100px),
@@ -260,7 +305,7 @@ body {
 
 /*********************** MODAL SECTION  */
 
-.modal{
+.modal {
   position: fixed;
   top: 0;
   right: 0;
@@ -276,38 +321,38 @@ body {
   opacity: 0.9;
 }
 
-.modal-open{
+.modal-open {
   display: flex;
 }
 
-.modal-window{
+.modal-window {
   position: fixed;
   width: 100%;
   padding-top: 61px;
   padding-right: 71px;
   padding-bottom: 81px;
   max-width: 850px;
-  background-color: #FFBD54;
+  background-color: #ffbd54;
   background-image: url("../images/kuchuk.png");
   background-position: left bottom;
   background-repeat: no-repeat;
   z-index: 9999999;
 }
 
-.modal-end{
+.modal-end {
   width: 100%;
   max-width: 335px;
   margin-left: auto;
 }
 
-.modal-close{
+.modal-close {
   margin-left: 20px;
   border: none;
   outline: none;
   background-color: transparent;
 }
 
-.modal-title{
+.modal-title {
   margin-top: 0;
   margin-bottom: 28px;
   font-weight: 700;
@@ -316,12 +361,12 @@ body {
   color: #333;
 }
 
-.modal-form{
+.modal-form {
   display: flex;
   flex-direction: column;
 }
 
-.modal-input__name{
+.modal-input__name {
   width: 100%;
   margin-bottom: 14px;
   padding-top: 16px;
@@ -330,7 +375,7 @@ body {
   border: none;
 }
 
-.modal-input__email{
+.modal-input__email {
   width: 100%;
   margin-bottom: 14px;
   padding-top: 16px;
@@ -339,7 +384,7 @@ body {
   border: none;
 }
 
-.modal-input__comment{
+.modal-input__comment {
   width: 100%;
   min-height: 165px;
   margin-bottom: 26px;
@@ -348,11 +393,11 @@ body {
   border: none;
 }
 
-.modal-input__comment::placeholder{
-  color: #DBDBDB;
+.modal-input__comment::placeholder {
+  color: #dbdbdb;
 }
 
-.modal-submit{
+.modal-submit {
   width: fit-content;
   padding: 15px 48px;
   border: 2px solid #000;
@@ -360,12 +405,9 @@ body {
   color: #fff;
 }
 
-
-
 /********************** QUOTES SECTION  ************************/
 
 .quotes {
- 
   padding-top: 116px;
   padding-bottom: 191px;
 }
@@ -439,7 +481,6 @@ body {
 
 /********************** SERVICES SECTION  ************************/
 .services {
-
   padding-bottom: 127px;
 }
 .services_wrapper {
@@ -746,7 +787,6 @@ section .content p {
 .useful {
   padding-top: 216px;
   padding-bottom: 262px;
-
 }
 .useful_article {
   display: flex;
